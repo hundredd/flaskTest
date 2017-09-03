@@ -25,7 +25,7 @@ def showHunId():
 	return 'query' + id
 
 @app.route('/queryUrlFor', methods=['POST'])
-# fanxiangluyou
+# 反向路由,指定一个数据,反向指向一个方法!
 def showQueryUrlFor():
 	return 'query url:/t ' + url_for('showHunId')#这里用的是这个路由的函数
 
